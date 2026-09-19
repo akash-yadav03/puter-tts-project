@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.puter.com/v2/"></script>
+    <script src="script.js" defer></script>
+    <title>Python tts</title>
+</head>
+
+<body>
+    <header class="Header">
+        <h1>Python TTS</h1>
+    </header>
+    <main>
+    <textarea maxlength="500" placeholder="Enter text here..." id="textInput"></textarea>
+    <p id="charCount" class="charCount">0 / 500</p>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="languageSelect">Language</label>
+            <select id="languageSelect"></select>
+        </div>
+
+        <div class="control-group">
+            <label for="voiceSelect">Voice</label>
+            <select id="voiceSelect"></select>
+        </div>
+
+        <button id="generateButton" class="generateButton" type="button">Generate</button>
+    </div>
+
+    <p id="errorMessage" class="error-message"></p>
+
+    <div id="audioContainer" class="audio-container" hidden>
+        <audio id="audioPlayer" controls></audio>
+    </div>
+
+    </main>
+</body>
+</html>
